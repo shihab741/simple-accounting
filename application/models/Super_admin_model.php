@@ -11,7 +11,7 @@
 
 		public function get_all_sheets()
 		{
-			return $this->db->select('*')->from('sheets')->get()->result();
+			return $this->db->select('*')->from('sheets')->order_by('name', 'ASC')->get()->result();
 		}
 
 		public function add_sheet($data)
