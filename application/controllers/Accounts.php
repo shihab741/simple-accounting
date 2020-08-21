@@ -7,6 +7,11 @@ class Accounts extends CI_Controller {
 	
 	public function __construct(){
 		parent::__construct();
+		$type = $this->session->userdata('type');
+		if ($type != NULL) 
+		{
+			redirect('super_admin');	
+		}
 	}
 
 	public function index(){
