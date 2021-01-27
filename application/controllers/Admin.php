@@ -16,7 +16,7 @@ class Admin extends CI_Controller {
 	public function index()
 	{
 		date_default_timezone_set("Asia/Dhaka");
-		$fromDate = date("yy-m-01");
+		$fromDate = date("Y-m-01");
 
 		$table_name = 'daily_data';
 		$initialAmountId = 1;

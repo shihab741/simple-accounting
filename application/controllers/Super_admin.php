@@ -165,7 +165,7 @@ class Super_admin extends CI_Controller {
 	{
 		$data = array();
 		date_default_timezone_set("Asia/Dhaka");
-		$date = date("yy-m-d H:i:s");
+		$date = date("Y-m-d H:i:s");
 
 		$data['sheet_id'] = $this->input->post('sheet_id', true);
 		$data['description'] = $this->input->post('description', true);
@@ -237,7 +237,7 @@ class Super_admin extends CI_Controller {
 		date_default_timezone_set("Asia/Dhaka");
 		$data['dateForHeading'] = date("M");
 
-		$fromDate = date("yy-m-01");
+		$fromDate = date("Y-m-01");
 		$startingDate =  date_format(date_create($fromDate),"Y-m-d H:i:s");
 
 		$data['fromDate'] = $fromDate;
